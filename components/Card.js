@@ -21,7 +21,7 @@ const Card = (props) => {
             <div className="p-6">
                 <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Mongoose - Express - EJS</h2>
             <h1 className="title-font text-lg font-medium text-gray-900 mb-3">{props.title}</h1>
-                <p className="leading-relaxed mb-3">Allows authenticated users to log and track their Service-Now ticket completion and duration. Exports to Excel and PDF.</p>
+                <p className="leading-relaxed mb-3">Allows authenticated users to log and track their Service-Now ticket completion and duration. <br/> Exports to Excel and PDF.</p>
                 <div className="flex items-center flex-wrap ">
                 <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href='https://github.com/scamelot/tasker'>Learn More     </a><a style={liveLinkStyle} className='text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0' href="http://techtasker.herokuapp.com">      Live Site</a>
                 </div>

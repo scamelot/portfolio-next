@@ -24,17 +24,11 @@ class Main extends React.Component {
   render() {
     
     let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
-
+    const imgStyle = {
+      maxWidth: '80vw'
+    }
     return (
       <div id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
-
-        {/* <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Intro</h2>
-          <span className="image main"><img src="/static/images/pic01.jpg" alt="" /></span>
-          <p>If someone needs what you provide, will your website draw them in? What will they see if they are on their phone? A responsive & accessible web presence is no longer merely a 'bonus' or 'nice to have' - it is essential.</p><p>
-It is my privilege to offer a chance to be seen on the web to small businesses and individuals around me. Whether that be creating a website for you from the ground up, or updating an existing presence for the mobile age. Providing a place for interested parties to find and learn about what you offer is what I offer.</p>
-          {close}
-        </article> */}
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Projects</h2>
@@ -44,8 +38,8 @@ It is my privilege to offer a chance to be seen on the web to small businesses a
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
-          <span className="image main"><img src="/static/images/me.jpg" alt="" /></span>
-          <p>Steve is a full-stack web developer and has been coding for the past 25 years. He has contributed to projects at ESPN, Disney and Apple. When he isn't at a keyboard, he can be found on mountaintops, flying drones, or running a tabletop session.</p>
+          <span className="image main"><img src="/static/images/me.jpg" style={imgStyle} alt="" /></span>
+          <p>Steve is a full-stack web developer and first began coding in QBasic. He has contributed to projects at ESPN, Disney and Apple. When he isn't at a keyboard, he can be found on mountaintops, flying drones, or running a tabletop session.</p>
           {close}
         </article>
 

@@ -23,6 +23,7 @@ class IndexPage extends React.Component {
         this.timeoutId = setTimeout(() => {
             this.setState({ loading: "" })
         }, 100)
+        document.body.style.zoom = "50%";
     }
 
     componentWillUnmount() {

@@ -18,7 +18,7 @@
 		background-image: -moz-radial-gradient(rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 55%);
 		background-image: -webkit-radial-gradient(rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 55%);
 		background-image: -ms-radial-gradient(rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 55%);
-		background-image: radial-gradient(rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 55%);
+		background-image: radial-gradient(rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 80%);
 		max-width: 100%;
 		text-align: center;
 
@@ -76,7 +76,7 @@
 				));
 				@include vendor('transition-delay', '0.25s');
 				padding: 3rem 2rem;
-				max-height: 40rem;
+				max-height: 80rem;
 				overflow: hidden;
 
 				> :last-child {
@@ -87,7 +87,7 @@
 			p {
 				text-transform: uppercase;
 				letter-spacing: _font(letter-spacing);
-				font-size: 0.8rem;
+				font-size: 1.5rem;
 				line-height: 2;
 			}
 		}
@@ -117,7 +117,7 @@
 						padding: 0 1.25rem 0 (1.25rem + _font(letter-spacing));
 						text-transform: uppercase;
 						letter-spacing: _font(letter-spacing);
-						font-size: 0.8rem;
+						font-size: 1.5rem;
 						border-bottom: 0;
 
 						&:hover {
