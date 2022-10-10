@@ -1,3 +1,3 @@
-#Steve Scammon's Portfolio Page
+Steve Scammon's Portfolio Page
 
 NextJS
